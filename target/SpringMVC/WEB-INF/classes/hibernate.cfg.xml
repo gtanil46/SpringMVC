@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+		<property name="connection.url">jdbc:mysql://localhost</property>
+		<property name="connection.username">gtanil46</property>
+		<property name="connection.password">ZpmqZpmq@123</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<!-- 
+		<mapping resource="user.hbm.xml"/> 
+		<mapping resource="car.hbm.xml"/> 
+		-->
+		
+		<mapping class="com.gta.cardealer.models.Car"/>
+		<mapping class="com.gta.cardealer.models.User"/>
+	</session-factory>
+
+</hibernate-configuration>
